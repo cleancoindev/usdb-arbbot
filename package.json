@@ -13,7 +13,7 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "jsonfile": "^5.0.0",
-    "node-telegram-bot-api": "^0.30.0",
+    "node-telegram-bot-api": "^0.56.0",
     "solc": "^0.4.23",
     "stringstream": "0.0.6",
     "truffle-hdwallet-provider": "0.0.6",
