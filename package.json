@@ -8,7 +8,9 @@
     "babel-node": "babel-node --",
     "build": "./node_modules/.bin/babel src -d build",
     "dist": "./node_modules/.bin/babel src -d dist --presets=babili",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register --reporter spec",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "dotenv": "^6.1.0",
@@ -17,7 +19,8 @@
     "solc": "^0.4.23",
     "stringstream": "0.0.6",
     "truffle-hdwallet-provider": "0.0.6",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.0.0-beta.36",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -31,5 +34,6 @@
     "eslint": "^4.0.0",
     "mocha": "^5.2.0",
     "power-assert": "^1.4.4"
-  }
+  },
+  "snyk": true
 }
